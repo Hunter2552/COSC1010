@@ -23,8 +23,8 @@ def calculate_average(filename):
     except ValueError:
         return "File contains non-integer values."
     except ZeroDivisionError:
-        return "File is empty."
-    except IOError:
+        return "File is empty." 
+    except IOError: #Added IOE Block
         return "An IOError occurred while accessing the file."
 
 # Definitions
